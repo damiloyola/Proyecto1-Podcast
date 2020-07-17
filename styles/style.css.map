@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,CAAC,CAAC;EACA,WAAW,ECAF,eAAe,EAAE,UAAU;CDCrC",
+    "sources": [
+        "style.scss",
+        "partials/_variables.scss",
+        "partials/_header.scss",
+        "partials/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

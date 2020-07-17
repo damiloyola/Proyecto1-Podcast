@@ -1,0 +1,13 @@
+@import "partials/variables";
+@import "partials/header";
+@import "partials/footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: $ibm-sans;
+}
