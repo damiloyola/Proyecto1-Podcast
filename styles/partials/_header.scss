@@ -1,12 +1,55 @@
 header {
+  display: flex;
+  justify-content: space-between;
+
   .logo {
+    margin-left: 16px;
+    margin-top: 10px;
   }
 
   nav {
+    /******** BURGER MENU *********/
+    .burger__label {
+      position: absolute;
+      top: 16px;
+      right: 19px;
+      span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: #000;
+        &:nth-child(2) {
+          margin: 3px 0;
+        }
+      }
+    }
     .burger__checkbox {
+      display: none;
+      &:checked ~ .menu {
+        top: 44px;
+      }
     }
 
-    .burger {
+    /*********** UL MENU **********/
+    .menu {
+      position: absolute;
+      top: -10000px;
+      left: 0;
+      list-style: none;
+      width: 100vw;
+      padding: 16px 0 0 16px;
+      background-color: $blue-menu;
+
+      li {
+        margin-bottom: 24px;
+        width: 100%;
+        a {
+          color: $white;
+          font-family: $ibm-mono;
+          font-size: 16px;
+          width: 100%;
+        }
+      }
     }
   }
 }

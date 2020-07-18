@@ -1,3 +1,69 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+header nav {
+  /******** BURGER MENU *********/
+  /*********** UL MENU **********/
+}
+
+header nav .burger__label {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+}
+
+header nav .burger__label span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+}
+
+header nav .burger__label span:nth-child(2) {
+  margin: 3px 0;
+}
+
+header nav .burger__checkbox {
+  display: none;
+}
+
+header nav .burger__checkbox:checked ~ .menu {
+  top: 44px;
+}
+
+header nav .menu {
+  position: absolute;
+  top: -10000px;
+  left: 0;
+  list-style: none;
+  width: 100vw;
+  padding: 16px 0 0 16px;
+  background-color: #0000ec;
+}
+
+header nav .menu li {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+header nav .menu li a {
+  color: #ffffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  width: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,7 +71,7 @@
   padding: 0;
 }
 
-p {
-  font-family: "IBM Plex Sans", sans-serif;
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
