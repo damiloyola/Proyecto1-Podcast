@@ -1,0 +1,23 @@
+#nosotros {
+  padding: 0 16px;
+  .phone {
+    display: block;
+    width: 340px;
+    height: 519px;
+    margin: 0 auto;
+    position: relative;
+    top: -96px;
+  }
+
+  .nosotros__text {
+    margin-top: -96px;
+    h2 {
+      @extend %title;
+      margin-top: 27px;
+      margin-bottom: 8px;
+    }
+    p {
+      @extend %p;
+    }
+  }
+}

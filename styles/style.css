@@ -14,13 +14,13 @@
   color: #ffffffff;
 }
 
-#hero .hero__title, #episodios .episodios__title {
+#hero .hero__title, #episodios .episodios__title, #nosotros .nosotros__text h2 {
   font-size: 36px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
 }
 
-#hero .hero__text {
+#hero .hero__text, #nosotros .nosotros__text p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
 }
@@ -204,6 +204,28 @@ header nav .menu li a {
         grid-template: 1fr 1fr /1fr 1fr;
     gap: 72px;
   }
+}
+
+#nosotros {
+  padding: 0 16px;
+}
+
+#nosotros .phone {
+  display: block;
+  width: 340px;
+  height: 519px;
+  margin: 0 auto;
+  position: relative;
+  top: -96px;
+}
+
+#nosotros .nosotros__text {
+  margin-top: -96px;
+}
+
+#nosotros .nosotros__text h2 {
+  margin-top: 27px;
+  margin-bottom: 8px;
 }
 
 * {
