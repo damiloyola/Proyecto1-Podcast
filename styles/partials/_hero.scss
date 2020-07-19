@@ -19,3 +19,23 @@
     @extend %btn;
   }
 }
+
+/******** MEDIA QUERY DESKTOP**********/
+
+@media (min-width: 700px) {
+  #hero {
+    padding: 120px 0px 5px 13.8%;
+    .hero__title {
+      font-size: 64px;
+      .hello {
+        display: inline;
+      }
+    }
+    .hero__text {
+      max-width: 628px;
+    }
+    .hero__btn {
+      width: 226px;
+    }
+  }
+}

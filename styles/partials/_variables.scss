@@ -23,6 +23,10 @@ $ibm-sans: "IBM Plex Sans", sans-serif;
   font-weight: 500;
   background-color: $aqua;
   color: $black;
+  &:hover {
+    background: linear-gradient(225deg, $blue-light 0%, $aqua 100%);
+    color: $white;
+  }
 }
 
 %title {

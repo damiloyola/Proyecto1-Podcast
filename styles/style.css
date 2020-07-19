@@ -9,6 +9,11 @@
   color: #060a24;
 }
 
+#hero .hero__btn:hover {
+  background: linear-gradient(225deg, #0000ff 0%, #00f3bb 100%);
+  color: #ffffffff;
+}
+
 #hero .hero__title {
   font-size: 36px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -139,6 +144,25 @@ header nav .menu li a {
 
 #hero .hero__text {
   margin: 16px 0 36px;
+}
+
+/******** MEDIA QUERY DESKTOP**********/
+@media (min-width: 700px) {
+  #hero {
+    padding: 120px 0px 5px 13.8%;
+  }
+  #hero .hero__title {
+    font-size: 64px;
+  }
+  #hero .hero__title .hello {
+    display: inline;
+  }
+  #hero .hero__text {
+    max-width: 628px;
+  }
+  #hero .hero__btn {
+    width: 226px;
+  }
 }
 
 * {
