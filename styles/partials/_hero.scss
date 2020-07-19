@@ -1,0 +1,21 @@
+#hero {
+  padding: 29px 16px 24px;
+  .hero__title {
+    @extend %title;
+
+    .hello {
+      display: block;
+      .world {
+        text-decoration: line-through;
+      }
+    }
+  }
+  .hero__text {
+    @extend %p;
+
+    margin: 16px 0 36px;
+  }
+  .hero__btn {
+    @extend %btn;
+  }
+}

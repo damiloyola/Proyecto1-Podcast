@@ -11,3 +11,27 @@ $aqua: #00f3bb;
 
 $ibm-mono: "IBM Plex Mono", monospace;
 $ibm-sans: "IBM Plex Sans", sans-serif;
+
+//********** PLACEHOLDERS *********//
+
+%btn {
+  display: block;
+  width: 100%;
+  padding: 13px 0px;
+  text-align: center;
+  font-family: $ibm-mono;
+  font-weight: 500;
+  background-color: $aqua;
+  color: $black;
+}
+
+%title {
+  font-size: 36px;
+  font-family: $ibm-sans;
+  font-weight: 400;
+}
+
+%p {
+  font-family: $ibm-mono;
+  font-size: 14px;
+}

@@ -1,3 +1,25 @@
+#hero .hero__btn {
+  display: block;
+  width: 100%;
+  padding: 13px 0px;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  background-color: #00f3bb;
+  color: #060a24;
+}
+
+#hero .hero__title {
+  font-size: 36px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
+#hero .hero__text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+}
+
 /******** HEADER MOBILE **********/
 header {
   display: -webkit-box;
@@ -101,6 +123,22 @@ header nav .menu li a {
     color: rgba(6, 10, 36, 0.48);
     text-decoration: line-through;
   }
+}
+
+#hero {
+  padding: 29px 16px 24px;
+}
+
+#hero .hero__title .hello {
+  display: block;
+}
+
+#hero .hero__title .hello .world {
+  text-decoration: line-through;
+}
+
+#hero .hero__text {
+  margin: 16px 0 36px;
 }
 
 * {
