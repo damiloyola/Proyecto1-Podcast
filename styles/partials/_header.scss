@@ -79,7 +79,7 @@ header {
 
             &:hover {
               color: $aqua;
-              font-weight: 500;
+              font-weight: $mono-bold;
               text-decoration: line-through;
             }
 

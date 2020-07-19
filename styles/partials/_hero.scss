@@ -9,6 +9,9 @@
         text-decoration: line-through;
       }
     }
+    .dot {
+      color: $blue-menu;
+    }
   }
   .hero__text {
     @extend %p;

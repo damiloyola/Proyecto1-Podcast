@@ -12,6 +12,10 @@ $aqua: #00f3bb;
 $ibm-mono: "IBM Plex Mono", monospace;
 $ibm-sans: "IBM Plex Sans", sans-serif;
 
+$normal: 400;
+$mono-bold: 500;
+$sans-bold: 600;
+
 //********** PLACEHOLDERS *********//
 
 %btn {
@@ -20,7 +24,7 @@ $ibm-sans: "IBM Plex Sans", sans-serif;
   padding: 13px 0px;
   text-align: center;
   font-family: $ibm-mono;
-  font-weight: 500;
+  font-weight: $mono-bold;
   background-color: $aqua;
   color: $black;
   &:hover {
@@ -32,7 +36,7 @@ $ibm-sans: "IBM Plex Sans", sans-serif;
 %title {
   font-size: 36px;
   font-family: $ibm-sans;
-  font-weight: 400;
+  font-weight: $normal;
 }
 
 %p {
