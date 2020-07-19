@@ -1,18 +1,18 @@
+/******** HEADER MOBILE **********/
 header {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
+  height: 44px;
   .logo {
     margin-left: 16px;
-    margin-top: 10px;
   }
 
   nav {
     /******** BURGER MENU *********/
+    margin-right: 19px;
     .burger__label {
-      position: absolute;
-      top: 16px;
-      right: 19px;
+      cursor: pointer;
       span {
         display: block;
         width: 18px;
@@ -41,13 +41,53 @@ header {
       background-color: $blue-menu;
 
       li {
-        margin-bottom: 24px;
-        width: 100%;
         a {
           color: $white;
           font-family: $ibm-mono;
           font-size: 16px;
-          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/************ MEDIA QUERY DESKTOP *********/
+@media (min-width: 700px) {
+  header {
+    height: 80px;
+    .logo {
+      width: 36px;
+      height: 36px;
+    }
+    nav {
+      margin: 0;
+      .burger__label {
+        display: none;
+      }
+
+      .menu {
+        position: static;
+        width: 100%;
+        padding: 0;
+        background-color: $white;
+        display: flex;
+        margin-right: 100px;
+        li {
+          margin-left: 48px;
+          a {
+            color: $black;
+
+            &:hover {
+              color: $aqua;
+              font-weight: 500;
+              text-decoration: line-through;
+            }
+
+            &:active {
+              color: transparentize($black, 0.52);
+              text-decoration: line-through;
+            }
+          }
         }
       }
     }

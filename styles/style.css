@@ -1,3 +1,4 @@
+/******** HEADER MOBILE **********/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,22 +6,24 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
 }
 
 header .logo {
   margin-left: 16px;
-  margin-top: 10px;
 }
 
 header nav {
   /******** BURGER MENU *********/
+  margin-right: 19px;
   /*********** UL MENU **********/
 }
 
 header nav .burger__label {
-  position: absolute;
-  top: 16px;
-  right: 19px;
+  cursor: pointer;
 }
 
 header nav .burger__label span {
@@ -52,16 +55,52 @@ header nav .menu {
   background-color: #0000ec;
 }
 
-header nav .menu li {
-  margin-bottom: 24px;
-  width: 100%;
-}
-
 header nav .menu li a {
   color: #ffffffff;
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
-  width: 100%;
+}
+
+/************ MEDIA QUERY DESKTOP *********/
+@media (min-width: 700px) {
+  header {
+    height: 80px;
+  }
+  header .logo {
+    width: 36px;
+    height: 36px;
+  }
+  header nav {
+    margin: 0;
+  }
+  header nav .burger__label {
+    display: none;
+  }
+  header nav .menu {
+    position: static;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 100px;
+  }
+  header nav .menu li {
+    margin-left: 48px;
+  }
+  header nav .menu li a {
+    color: #060a24;
+  }
+  header nav .menu li a:hover {
+    color: #00f3bb;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+  header nav .menu li a:active {
+    color: rgba(6, 10, 36, 0.48);
+    text-decoration: line-through;
+  }
 }
 
 * {
