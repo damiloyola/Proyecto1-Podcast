@@ -21,3 +21,22 @@
     }
   }
 }
+
+@media (min-width: 780px) {
+  #nosotros {
+    display: flex;
+    justify-content: center;
+    .phone {
+      width: 456px;
+      height: 660px;
+      margin: 0;
+      top: -196px;
+    }
+
+    .nosotros__text {
+      margin: 0;
+      padding-left: 60px;
+      max-width: 464px;
+    }
+  }
+}

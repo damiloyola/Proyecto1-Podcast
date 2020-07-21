@@ -41,6 +41,8 @@ header {
       background-color: $blue-menu;
 
       li {
+        margin-bottom: 24px;
+        width: 100%;
         a {
           color: $white;
           font-family: $ibm-mono;
@@ -52,7 +54,7 @@ header {
 }
 
 /************ MEDIA QUERY DESKTOP *********/
-@media (min-width: 700px) {
+@media (min-width: 780px) {
   header {
     height: 80px;
     .logo {
