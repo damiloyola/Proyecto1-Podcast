@@ -1,0 +1,36 @@
+#topicos {
+  h2 {
+    @extend %title;
+    margin: 48px 0 37px 16px;
+  }
+  .topicos__icons {
+    text-align: center;
+    .icon {
+      font-family: $ibm-sans;
+      font-weigth: $sans-bold;
+      font-size: 24px;
+      margin-bottom: 49px;
+      h3 {
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+/********* MEDIA QUERY DESKTOP **********/
+@media (min-width: 780px) {
+  #topicos {
+    h2 {
+      margin-left: 200px;
+    }
+    .topicos__icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 69px;
+      .icon {
+        width: 260px;
+        // padding: 0 78px;
+      }
+    }
+  }
+}
