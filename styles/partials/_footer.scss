@@ -1,0 +1,59 @@
+#novedades {
+  padding: 64px 16px;
+  text-align: center;
+  background-image: linear-gradient(225deg, $blue-light 0%, $blue-dark 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  h2 {
+    @extend %title;
+    color: $white;
+    margin-bottom: 36px;
+    font-size: 48px;
+  }
+  a {
+    @extend %btn;
+  }
+}
+
+footer {
+  padding: 24px 45px 31px;
+  text-align: center;
+  p {
+    @extend %p;
+    padding-bottom: 16px;
+  }
+
+  .social {
+    margin: 0 auto;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $black;
+    }
+  }
+}
+
+/****** MEDIA QUERY DESKTOP *******/
+@media (min-width: 780px) {
+  #novedades {
+    padding-top: 213px;
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    a {
+      width: 345px;
+      margin: 0 auto;
+    }
+  }
+
+  footer {
+    padding: 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      padding: 0;
+    }
+    .social {
+      margin: 0;
+    }
+  }
+}
