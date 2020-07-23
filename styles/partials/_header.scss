@@ -13,7 +13,9 @@ header {
     margin-right: 19px;
     .burger__label {
       cursor: pointer;
+
       span {
+        transition: 0.6s;
         display: block;
         width: 18px;
         height: 2px;
@@ -25,8 +27,22 @@ header {
     }
     .burger__checkbox {
       display: none;
+
       &:checked ~ .menu {
         top: 44px;
+      }
+      &:checked ~ .burger__label span:first-child {
+        position: relative;
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:checked ~ .burger__label span:nth-child(2) {
+        display: none;
+      }
+      &:checked ~ .burger__label span:last-child {
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
       }
     }
 
@@ -36,13 +52,14 @@ header {
       top: -10000px;
       left: 0;
       list-style: none;
-      width: calc(100vw - 20px);
+      // width: calc(100vw - 20px);
+      width: 100%;
       padding: 16px 0 0 16px;
       background-color: $blue-menu;
 
       li {
         margin-bottom: 24px;
-        width: 100%;
+
         a {
           color: $white;
           font-family: $ibm-mono;
@@ -69,13 +86,15 @@ header {
 
       .menu {
         position: static;
-        width: 100%;
+        width: 500px;
         padding: 0;
         background-color: $white;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-right: 100px;
         li {
-          margin-left: 48px;
+          margin: 0;
           a {
             color: $black;
 
