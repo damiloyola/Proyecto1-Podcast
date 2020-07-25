@@ -27,6 +27,7 @@ $sans-bold: 600;
   font-weight: $mono-bold;
   background-color: $aqua;
   color: $black;
+  transition: 0.5s ease-out;
   &:hover {
     background: linear-gradient(225deg, $blue-light 0%, $aqua 100%);
     color: $white;

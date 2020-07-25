@@ -92,7 +92,7 @@ header {
           margin: 0;
           a {
             color: $black;
-
+            transition: 0.3s ease-out;
             &:hover {
               color: $aqua;
               font-weight: $mono-bold;

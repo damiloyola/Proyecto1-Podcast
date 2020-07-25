@@ -7,6 +7,8 @@
   font-weight: 500;
   background-color: #00f3bb;
   color: #060a24;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 #novedades a:hover, #hero .hero__btn:hover {
@@ -145,6 +147,8 @@ header nav .menu li a {
   }
   header nav .menu li a {
     color: #060a24;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
   }
   header nav .menu li a:hover {
     color: #00f3bb;
@@ -227,7 +231,7 @@ footer .social a {
 }
 
 #hero {
-  padding: 10% 0 0 5%;
+  padding: 10% 5% 5%;
 }
 
 #hero .hero__title .hello {
@@ -279,7 +283,10 @@ footer .social a {
 }
 
 #episodios .episodios__spotify iframe {
+  width: 90%;
+  height: 232px;
   margin-bottom: 11px;
+  border: none;
 }
 
 /********** MEDIA QUERY DESKTOP *********/
@@ -441,6 +448,7 @@ footer .social a {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
