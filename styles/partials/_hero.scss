@@ -1,5 +1,6 @@
 #hero {
-  padding: 29px 16px 24px;
+  // padding: 29px 16px 24px;
+  padding: 10% 0 0 5%;
   .hero__title {
     @extend %title;
 
@@ -36,6 +37,7 @@
     }
     .hero__text {
       max-width: 628px;
+      font-size: 16px;
     }
     .hero__btn {
       width: 226px;

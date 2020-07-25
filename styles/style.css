@@ -23,6 +23,7 @@
 footer p, #hero .hero__text, #nosotros .nosotros__text p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
+  line-height: 24px;
 }
 
 /******** HEADER MOBILE **********/
@@ -226,7 +227,7 @@ footer .social a {
 }
 
 #hero {
-  padding: 29px 16px 24px;
+  padding: 10% 0 0 5%;
 }
 
 #hero .hero__title .hello {
@@ -258,6 +259,7 @@ footer .social a {
   }
   #hero .hero__text {
     max-width: 628px;
+    font-size: 16px;
   }
   #hero .hero__btn {
     width: 226px;
@@ -303,19 +305,14 @@ footer .social a {
 
 #nosotros {
   padding: 0 16px;
+  position: relative;
+  top: -100px;
 }
 
 #nosotros .phone {
   display: block;
-  max-width: 340px;
-  height: 519px;
+  width: 100%;
   margin: 0 auto;
-  position: relative;
-  top: -96px;
-}
-
-#nosotros .nosotros__text {
-  margin-top: -96px;
 }
 
 #nosotros .nosotros__text h2 {
@@ -332,26 +329,28 @@ footer .social a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-height: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #nosotros .phone {
-    width: 456px;
-    height: 660px;
+    width: 30%;
     margin: 0;
-    top: -196px;
   }
   #nosotros .nosotros__text {
     margin: 0;
     padding-left: 60px;
-    max-width: 464px;
+    width: 50%;
+    min-width: 500px;
+    max-height: 300px;
   }
   #nosotros .nosotros__text h2 {
     font-size: 48px;
+    margin-bottom: 24px;
   }
-}
-
-#entrevistas {
-  margin-top: 54px;
+  #nosotros .nosotros__text p {
+    font-size: 16px;
+  }
 }
 
 #entrevistas h2 {

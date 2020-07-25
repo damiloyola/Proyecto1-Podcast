@@ -1,16 +1,14 @@
 #nosotros {
   padding: 0 16px;
+  position: relative;
+  top: -100px;
   .phone {
     display: block;
-    max-width: 340px;
-    height: 519px;
+    width: 100%;
     margin: 0 auto;
-    position: relative;
-    top: -96px;
   }
 
   .nosotros__text {
-    margin-top: -96px;
     h2 {
       @extend %title;
       margin-top: 27px;
@@ -27,21 +25,26 @@
   #nosotros {
     display: flex;
     justify-content: center;
-    max-height: 500px;
+    align-items: center;
+
     .phone {
-      width: 456px;
-      height: 660px;
+      width: 30%;
       margin: 0;
-      top: -196px;
     }
 
     .nosotros__text {
       h2 {
         font-size: 48px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 16px;
       }
       margin: 0;
       padding-left: 60px;
-      max-width: 464px;
+      width: 50%;
+      min-width: 500px;
+      max-height: 300px;
     }
   }
 }
