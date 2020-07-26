@@ -282,10 +282,14 @@ footer .social a {
   margin-bottom: 21px;
 }
 
+#episodios .episodios__spotify {
+  text-align: center;
+}
+
 #episodios .episodios__spotify iframe {
   width: 90%;
   height: 232px;
-  margin-bottom: 11px;
+  margin-bottom: 11px auto;
   border: none;
 }
 
@@ -361,8 +365,7 @@ footer .social a {
 }
 
 #entrevistas h2 {
-  margin-left: 16px;
-  margin-bottom: 14px;
+  margin: 0 16px 14px;
 }
 
 #entrevistas .entrevistas__fotos {
@@ -378,6 +381,7 @@ footer .social a {
   width: 100%;
 }
 
+/**** MEDIA QUERY DESKTOP *****/
 @media (min-width: 780px) {
   #entrevistas h2 {
     font-size: 48px;

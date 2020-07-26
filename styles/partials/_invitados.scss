@@ -1,8 +1,7 @@
 #entrevistas {
   h2 {
     @extend %title;
-    margin-left: 16px;
-    margin-bottom: 14px;
+    margin: 0 16px 14px;
   }
   .entrevistas__fotos {
     width: 100%;
@@ -13,7 +12,7 @@
     }
   }
 }
-
+/**** MEDIA QUERY DESKTOP *****/
 @media (min-width: 780px) {
   #entrevistas {
     h2 {

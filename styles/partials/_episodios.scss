@@ -10,10 +10,11 @@
   }
 
   .episodios__spotify {
+    text-align: center;
     iframe {
       width: 90%;
       height: 232px;
-      margin-bottom: 11px;
+      margin-bottom: 11px auto;
       border: none;
     }
   }
